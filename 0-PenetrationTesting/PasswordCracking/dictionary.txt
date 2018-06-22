@@ -1,0 +1,3 @@
+#user password
+root 123456
+mysql mysql
