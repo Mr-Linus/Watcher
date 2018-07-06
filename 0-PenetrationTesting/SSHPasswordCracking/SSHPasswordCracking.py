@@ -34,6 +34,7 @@ def get_password_list():
     f.close()
     return PASSWORD_LIST
 
+
 def scan_all():
     ip_list = get_ip_list()
     for ip in ip_list:
@@ -41,11 +42,11 @@ def scan_all():
         password_list = get_password_list()
         for user in user_list:
             for password in password_list:
-                th = threading.Thread(target=cracking, args=(ip,user,password))
+                th = threading.Thread(target=cracking, args=(ip, user, password))
                 th.start()
 
 
-def cracking(ip,user,password):
+def cracking(ip, user, password):
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())

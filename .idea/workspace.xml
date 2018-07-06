@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761281f1-1dd9-4f22-8995-99b9c41e8c69" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0-PenetrationTesting/ZipCracking/ZipCracking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0-PenetrationTesting/ZipCracking/dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-PenetrationTesting/PasswordCracking/PasswordCracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/PasswordCracking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-PenetrationTesting/PasswordCracking/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-PenetrationTesting/PasswordCracking/iplist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/iplist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-PenetrationTesting/PasswordCracking/requirement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/requirement.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0-PenetrationTesting/PasswordCracking/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/user.txt" afterDir="false" />
-    </list>
+    <list default="true" id="761281f1-1dd9-4f22-8995-99b9c41e8c69" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +23,8 @@
       <file leaf-file-name="ZipCracking.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/ZipCracking/ZipCracking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -102,18 +93,6 @@
               <item name="0-PenetrationTesting" type="462c0819:PsiDirectoryNode" />
               <item name="CreakPHPMyAdmin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SecurityTools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityTools" type="462c0819:PsiDirectoryNode" />
-              <item name="0-PenetrationTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="SSHPasswordCracking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecurityTools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityTools" type="462c0819:PsiDirectoryNode" />
-              <item name="0-PenetrationTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="ZipCracking" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -158,7 +137,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -225,8 +203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/ZipCracking/ZipCracking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
