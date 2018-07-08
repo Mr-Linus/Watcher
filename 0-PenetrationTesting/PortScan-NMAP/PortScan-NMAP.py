@@ -17,11 +17,11 @@ def main():
     parser = optparse.OptionParser('usage: PortScan-NMAP.py -H <target host> -p <target port>')
     parser.add_option('-H', dest='tgtHost', type='string', help='specify target host,it must be a ip address.')
     parser.add_option('-p', dest='tgtPorts', type='string', help='specify target port[s], separated by \',\' or \'-\'')
-    (options , args) = parser.parse_args()
+    (options, args) = parser.parse_args()
     tgtHost = options.tgtHost
     if ("," in options.tgtPorts) and ("-" not in options.tgtPorts):
         tgtPorts = str(options.tgtPorts).split(',')
-    elif ", " not in options.tgtPorts and "-" in options.tgtPorts:
+    elif (", " not in options.tgtPorts) and ("-" in options.tgtPorts):
         (sPort, ePort) = options.tgtPorts.split('-')
         tgtPorts = list(range(int(sPort), int(ePort)+1))
     else:
