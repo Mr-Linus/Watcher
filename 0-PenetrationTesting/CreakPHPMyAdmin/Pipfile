@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "==2.18.4"
+colorama = "==0.3.9"
+progressbar = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
