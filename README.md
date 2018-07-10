@@ -6,11 +6,12 @@ GeekCloud社区开发的安全工具集
 | 序号 |   名称   |    进度     |
 | :--: | :------: | :---------: |
 |  0   | 渗透测试 | Processing  |
-|  1   | 取证调查 | Undeveloped |
-|  2   | 流量分析 | Undeveloped |
-|  3   | 无线攻击 | Undeveloped |
-|  4   | 刺探网络 | Undeveloped |
-|  5   |   免杀   | Undeveloped |
+|  1   | 信息收集 | Processing |
+|  2   | 取证调查 | Undeveloped |
+|  3   | 流量分析 | Undeveloped |
+|  4   | 无线攻击 | Undeveloped |
+|  5   | 刺探网络 | Undeveloped |
+|  6   |   免杀   | Undeveloped |
 
 
 

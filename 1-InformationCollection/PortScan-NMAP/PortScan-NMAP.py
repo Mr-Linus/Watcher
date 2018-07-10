@@ -15,7 +15,7 @@ def nmapScan(tgtHost, tgtPort):
 
 def main():
     parser = optparse.OptionParser('usage: PortScan-NMAP.py -H <target host> -p <target port>')
-    parser.add_option('-H', dest='tgtHost', type='string', help='specify target host,it must be a ip address.')
+    parser.add_option('-H', dest='tgtHost', type='string', help='specify target host')
     parser.add_option('-p', dest='tgtPorts', type='string', help='specify target port[s], separated by \',\' or \'-\'')
     (options, args) = parser.parse_args()
     tgtHost = options.tgtHost
