@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761281f1-1dd9-4f22-8995-99b9c41e8c69" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/1-InformationCollection/DataForgery/DataForgery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-InformationCollection/DataForgery/requirement.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0-PenetrationTesting/BotNet/BotNet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0-PenetrationTesting/BotNet/bot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0-PenetrationTesting/BotNet/requirement.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,32 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WhoisQuery.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-InformationCollection/WhoisQuery/WhoisQuery.py">
+      <file leaf-file-name="BotNet.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/BotNet/BotNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="585">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortScan-NMAP.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-InformationCollection/PortScan-NMAP/PortScan-NMAP.py">
+      <file leaf-file-name="bot.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/BotNet/bot.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataForgery.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1-InformationCollection/DataForgery/DataForgery.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="30">
+              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -73,6 +65,9 @@
         <option value="$PROJECT_DIR$/1-InformationCollection/PortScan-NMAP/PortScan-NMAP.py" />
         <option value="$PROJECT_DIR$/1-InformationCollection/DataForgery/requirement.txt" />
         <option value="$PROJECT_DIR$/1-InformationCollection/DataForgery/DataForgery.py" />
+        <option value="$PROJECT_DIR$/0-PenetrationTesting/BotNet/requirement.txt" />
+        <option value="$PROJECT_DIR$/0-PenetrationTesting/BotNet/bot.txt" />
+        <option value="$PROJECT_DIR$/0-PenetrationTesting/BotNet/BotNet.py" />
       </list>
     </option>
   </component>
@@ -85,9 +80,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1825" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="172" />
+    <option name="y" value="26" />
     <option name="width" value="1680" />
     <option name="height" value="947" />
   </component>
@@ -115,13 +110,25 @@
             <path>
               <item name="SecurityTools" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecurityTools" type="462c0819:PsiDirectoryNode" />
-              <item name="1-InformationCollection" type="462c0819:PsiDirectoryNode" />
+              <item name="0-PenetrationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="BotNet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SecurityTools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecurityTools" type="462c0819:PsiDirectoryNode" />
+              <item name="0-PenetrationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="SSHPasswordCracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SecurityTools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecurityTools" type="462c0819:PsiDirectoryNode" />
+              <item name="0-PenetrationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="ZipCracking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SecurityTools" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecurityTools" type="462c0819:PsiDirectoryNode" />
               <item name="1-InformationCollection" type="462c0819:PsiDirectoryNode" />
-              <item name="DataForgery" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -170,7 +177,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1825" y="42" width="1680" height="947" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -180,7 +187,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298969" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -208,6 +215,47 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/1-InformationCollection/WhoisQuery/WhoisQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-InformationCollection/PortScan-NMAP/PortScan-NMAP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-InformationCollection/WhoisQuery/WhoisQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-InformationCollection/PortScan-NMAP/PortScan-NMAP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-InformationCollection/DataForgery/DataForgery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1-InformationCollection/WhoisQuery/WhoisQuery.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -296,24 +344,10 @@
     <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/CreakPHPMyAdmin/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/SSHPasswordCracking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/dictionary.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/ZipCracking/ZipCracking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -362,16 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1-InformationCollection/WhoisQuery/WhoisQuery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1-InformationCollection/DataForgery/requirement.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -379,17 +403,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1-InformationCollection/PortScan-NMAP/PortScan-NMAP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1-InformationCollection/DataForgery/DataForgery.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-InformationCollection/WhoisQuery/WhoisQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/BotNet/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943126/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="896" column="6" selection-start-line="896" selection-start-column="6" selection-end-line="896" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/pexpect/pxssh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="260" column="49" selection-start-line="260" selection-start-column="49" selection-end-line="260" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/ZipCracking/ZipCracking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-InformationCollection/PortScan-NMAP/PortScan-NMAP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/SSHPasswordCracking/SSHPasswordCracking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/BotNet/bot.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0-PenetrationTesting/BotNet/BotNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
