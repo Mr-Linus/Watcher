@@ -5,6 +5,7 @@ import argparse
 import requests
 import re
 
+
 def main():
     # 指定-r参数
     parser = argparse.ArgumentParser()
@@ -56,6 +57,8 @@ def main():
         print(tb)
 
     except Exception as e:
-        print(e) 
+        print(e)
+
+
 if __name__ == '__main__':
     main()

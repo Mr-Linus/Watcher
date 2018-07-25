@@ -1,0 +1,4 @@
+#username
+anonymous
+ftp
+guest

