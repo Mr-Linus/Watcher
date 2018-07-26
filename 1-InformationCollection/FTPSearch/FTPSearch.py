@@ -3,14 +3,7 @@ import optparse
 import re
 
 
-def SearchPage(ftp):
-    try:
-        dirList = ftp.nlst()
-    except:
-        dirList = []
-        print('[-] Could not list directory contents.')
-        print('[-] Skipping To Next Target.')
-        return
+def SearchPage(dirList):
     reList = []
     for fileName in dirList:
         fn = fileName.lower()
@@ -18,22 +11,32 @@ def SearchPage(ftp):
             print("[+] Found page: "+fileName)
             reList.append(fileName)
         elif ('www' in fn) or ('ht' in fn) or ('doc' in fn) or ('page' in fn) or ('host' in fn):
-            print("[+] Found directory : " + fileName)
+            print("[+] Found maybe a directory : " + fileName)
             reList.append(fileName)
         elif ('.sql' in fn):
             print("[+] Found Database :" + fileName)
         elif ('.tar' in fn) or ('.zip' in fn) or ('.7z' in fn):
             print("[+] Found Compressed file: "+fileName)
-    return reList
+    return 0
 
 def ListPage(ftp):
     try:
-        dirList = ftp.nlst()
+        fileList = ftp.nlst()
+        print(fileList)
     except:
-        dirList = []
+        fileList = []
         print('[-] Could not list directory contents.')
         print('[-] Skipping To Next Target.')
         return
+    SearchPage(fileList)
+    for dir in fileList:
+        try:
+            ftp.cwd(dir)
+            ListPage(ftp)
+            ftp.cwd('..')
+        except:
+            pass
+    return
 
 def main():
     parser = optparse.OptionParser('usage: FTPSearchPage.py -H <target host> -p <target port>')
@@ -50,6 +53,7 @@ def main():
     host = options.tgtHost
     ftp = ftplib.FTP(host)
     ftp.port=port
+    ftp.encoding='gbk'
     f = open('accounts.txt')
     for item in f.readlines():
         item = item.strip()
@@ -59,9 +63,8 @@ def main():
                 ftp.login(para[0],para[1])
             except:
                 print("[-] FTP login Error!")
-            SearchPage(ftp)
+            ListPage(ftp)
     f.close()
-
 
 
 if __name__ == '__main__':
