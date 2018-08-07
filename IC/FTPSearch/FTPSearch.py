@@ -38,6 +38,7 @@ def ListPage(ftp):
             pass
     return
 
+
 def main():
     parser = optparse.OptionParser('usage: FTPSearchPage.py -H <target host> -p <target port>')
     parser.add_option('-H', dest='tgtHost', type='string', help='specify target host')
@@ -54,7 +55,7 @@ def main():
     ftp = ftplib.FTP(host)
     ftp.port=port
     ftp.encoding='gbk'
-    f = open('accounts.txt')
+    f = open('../etc/FTPAccounts.txt')
     for item in f.readlines():
         item = item.strip()
         para = re.split(' ', item)

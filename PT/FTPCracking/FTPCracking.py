@@ -5,7 +5,7 @@ import threading
 
 def get_password_list():
     PASSWORD_LIST = []
-    f = open('dictionary.txt')
+    f = open('../res/FTPDict.txt')
     for item in f.readlines():
         item = item.strip()
         if item and not item.startswith('#'):
@@ -16,7 +16,7 @@ def get_password_list():
 
 def get_user_list():
     USER_LIST = []
-    f = open('user.txt')
+    f = open('../res/FTPUser.txt')
     for item in f.readlines():
         item = item.strip()
         if item and not item.startswith('#'):

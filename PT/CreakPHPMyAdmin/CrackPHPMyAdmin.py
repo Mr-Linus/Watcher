@@ -30,9 +30,9 @@ def option():
 
 def main():
     flag = False
-    parser,args = option()
+    parser, args = option()
     if args.password:
-        f = open(args.password, "r")
+        f = open("../res/CrackPHPPassword.txt", "r")
         lines = f.readlines()      #读取全部内容 ，并以列表方式返
         p = progressbar.ProgressBar()
         print(Fore.RED + "attacking....")

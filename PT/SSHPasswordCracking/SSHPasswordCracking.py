@@ -4,7 +4,7 @@ import threading
 
 def get_ip_list():
     IP_LIST = []
-    f = open('iplist.txt')
+    f = open('../res/iplist.txt')
     for item in f.readlines():
         item = item.strip()
         if item and not item.startswith('#'):
@@ -15,7 +15,7 @@ def get_ip_list():
 
 def get_user_list():
     USER_LIST = []
-    f = open('user.txt')
+    f = open('../res/SSHUser.txt')
     for item in f.readlines():
         item = item.strip()
         if item and not item.startswith('#'):
@@ -26,7 +26,7 @@ def get_user_list():
 
 def get_password_list():
     PASSWORD_LIST = []
-    f = open('dictionary.txt')
+    f = open('../res/SSHDict.txt')
     for item in f.readlines():
         item = item.strip()
         if item and not item.startswith('#'):

