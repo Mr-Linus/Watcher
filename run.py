@@ -18,16 +18,17 @@ print("""\n\033[1;32m -----欢迎使用观察者----- \033[0m
  使用exit命令退出系统!\033[0m""")
 Completer = WordCompleter(['BotNet', 'CrackPHPMyAdmin', 'DataForgery', 'FTPCracking',
                             'FTPSearch', 'PortScan-Native', 'exit', 'PortScan-NMAP',
-                            'seo', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
+                            'SEO', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
                             'ZipCracking'], ignore_case=True)
 List = ['BotNet', 'CrackPHPMyAdmin', 'DataForgery', 'FTPCracking',
                             'FTPSearch', 'PortScan-Native',  'PortScan-NMAP',
-                            'seo', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
+                            'SEO', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
                             'ZipCracking']
 os.chdir("lib")
 while True:
     try:
-        GetInput = prompt('Watcher:>',history=FileHistory('history.txt'),auto_suggest=AutoSuggestFromHistory(),completer=Completer)
+        GetInput = prompt('Watcher:>', history=FileHistory('history.txt'), auto_suggest=AutoSuggestFromHistory(),
+                          completer=Completer)
         if str(GetInput) == "exit" or str(GetInput) == '^C':
             print("退出系统!")
             break
