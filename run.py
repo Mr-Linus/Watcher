@@ -19,11 +19,11 @@ print("""\n\033[1;32m -----欢迎使用观察者----- \033[0m
 Completer = WordCompleter(['BotNet', 'CrackPHPMyAdmin', 'DataForgery', 'FTPCracking',
                             'FTPSearch', 'PortScan-Native', 'exit', 'PortScan-NMAP',
                             'SEO', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
-                            'ZipCracking'], ignore_case=True)
+                            'ZipCracking', 'PdfScan'], ignore_case=True)
 List = ['BotNet', 'CrackPHPMyAdmin', 'DataForgery', 'FTPCracking',
                             'FTPSearch', 'PortScan-Native',  'PortScan-NMAP',
                             'SEO', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
-                            'ZipCracking']
+                            'ZipCracking', 'PdfScan']
 os.chdir("lib")
 while True:
     try:
