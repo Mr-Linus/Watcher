@@ -22,6 +22,7 @@ GeekCloud 社区开发的安全工具集
   - WhoisQuery
   - ZipCracking
   - PdfScan
+  - exifFetch
   
 ### Get Started
 
