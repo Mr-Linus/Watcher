@@ -20,7 +20,7 @@ def get_exif_data(fname):
 
 
 def main():
-    parser = optparse.OptionParser('usage:  exifFetch.py -H <target file> ')
+    parser = optparse.OptionParser('usage:  exifFetch.py -F <target file> ')
     parser.add_option('-F', dest='filename', type='string', help='specify target File')
     (options, args) = parser.parse_args()
     fileName = options.filename

@@ -12,3 +12,4 @@ python-whois==0.7.0
 prompt_toolkit==2.0.4
 pypdf2==1.26.0
 pillow==5.2.0
+pygeoip==0.3.2
