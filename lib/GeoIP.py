@@ -1,15 +1,18 @@
 import optparse
 import pygeoip
 
-gi = pygeoip.GeoIP('../etc/Geo.dat')
+gi = pygeoip.GeoIP('../etc/GeoLiteCity.dat')
+
 
 def printRecord(tgt):
     rec = gi.record_by_name(tgt)
-    print("Target: "+tgt+"Geo-Located.")
-    print("City: "+rec['city']+" .")
-    print("Region: "+rec['region']+' .')
-    print("Longitude: "+rec['longitude']+' .')
-    print("Latitude:"+rec['latitude']+' .')
+    print("Target: "+tgt+" Geo-Located.")
+    print("City: "+str(rec['city']))
+    print("Country: "+str(rec['country_name']))
+    print("Longitude: "+str(rec['longitude'])+" Latitude: "+str(rec['latitude']))
+    print("Region code: "+str(rec['region_code']))
+    print("Time zone: "+str(rec['time_zone']))
+
 
 def main():
     parser = optparse.OptionParser('usage:  GeoIP.py -H <target host> ')

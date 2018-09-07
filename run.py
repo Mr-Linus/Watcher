@@ -15,15 +15,15 @@ print("""\n\033[1;32m -----欢迎使用观察者----- \033[0m
  ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 \033[0m
 \033[32m
- 使用exit命令退出系统!\033[0m""")
+ 使用list命令查看功能，使用exit命令退出系统!\033[0m""")
 Completer = WordCompleter(['BotNet', 'CrackPHPMyAdmin', 'DataForgery', 'FTPCracking',
                             'FTPSearch', 'PortScan-Native', 'exit', 'PortScan-NMAP',
                             'SEO', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
-                            'ZipCracking', 'PdfScan', 'exifFetch'], ignore_case=True)
+                            'ZipCracking', 'PdfScan', 'exifFetch', 'GeoIP'], ignore_case=True)
 List = ['BotNet', 'CrackPHPMyAdmin', 'DataForgery', 'FTPCracking',
                             'FTPSearch', 'PortScan-Native',  'PortScan-NMAP',
                             'SEO', 'SSHPasswordCracking', 'WebServiceAcquisition', 'WhoisQuery',
-                            'ZipCracking', 'PdfScan', 'exifFetch']
+                            'ZipCracking', 'PdfScan', 'exifFetch', 'GeoIP']
 os.chdir("lib")
 while True:
     try:
@@ -40,6 +40,7 @@ while True:
                 print("  - "+str(cmd))
             continue
         os.system("python3 "+str(GetInput))
-    except:
+
+    except Exception:
         print("退出系统!")
         break
